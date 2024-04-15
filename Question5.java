@@ -36,7 +36,6 @@ public class Question5
     ArrayList<Integer> numbers = new ArrayList<Integer>();
 
     for(int i = 0; i < num; i++) {
-      System.out.println("Enter an integer");
       numbers.add(in.nextInt());
     }
 
