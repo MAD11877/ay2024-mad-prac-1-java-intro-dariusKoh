@@ -1,4 +1,7 @@
 import java.util.Scanner;
+import java.util.ArrayList;
+import java.util.Collections; 
+
 
 public class Question5
 {
@@ -27,6 +30,26 @@ public class Question5
      */
      
     Scanner in = new Scanner(System.in);
-    
+    int num = in.nextInt();
+
+    ArrayList<Integer> numbers = new ArrayList<Integer>();
+
+    for(int i = 0; i < num; i++) {
+      numbers.add(in.nextInt());
+    }
+
+    ArrayList<Integer> count = new ArrayList<Integer>();
+    for(int i = 0; i < num; i++) {
+      int counttime = 0;
+      for (int j : numbers) {
+        if(j == numbers.get(i)) {
+          counttime++;
+        }
+      }
+      count.add(counttime);
+    }
+
+    int max = count.indexOf(Collections.max(count));
+    System.out.println(numbers.get(max));
   }
 }
