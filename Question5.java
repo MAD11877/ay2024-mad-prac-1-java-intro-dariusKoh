@@ -30,7 +30,6 @@ public class Question5
      */
      
     Scanner in = new Scanner(System.in);
-    System.out.println("Enter an integer");
     int num = in.nextInt();
 
     ArrayList<Integer> numbers = new ArrayList<Integer>();

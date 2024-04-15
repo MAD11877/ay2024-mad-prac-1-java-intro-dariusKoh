@@ -12,7 +12,6 @@ public class Question2
     
     
     Scanner in = new Scanner(System.in);
-    System.out.println("Enter height in m");
     double height = in.nextDouble() / 100;
     double weight = in.nextDouble();
 
