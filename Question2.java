@@ -9,8 +9,15 @@ public class Question2
      * 
      * Hint: in.nextDouble() to read double
      */
-     
+    
+    
     Scanner in = new Scanner(System.in);
-    double height = in.nextDouble();
+    System.out.println("Enter height in m");
+    double height = in.nextDouble() / 100;
+
+    System.out.println("Enter weight in kg");
+    double weight = in.nextDouble();
+
+    System.out.println(weight / (height * height));
   }
 }
